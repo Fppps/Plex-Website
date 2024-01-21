@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Plex - V0.0.1</title>
+  <style>
+    /* CSS styles for the elements */
+    body {
+      background-image: url('BG.png');
+    }
+    #logo {
+      width: 300px;
+      height: 150px;
+    }
+    #tab-logo {
+      width: 329px;
+      height: 112px;
+    }
+    #search-bar {
+      width: 200px;
+    }
+    #search-button {
+      margin-left: 10px;
+    }
+    #background-change-button {
+      margin-top: 20px;
+    }
+    #update-button {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Plex - V0.0.1</h1>
+  <img id="logo" src="Home screen.png" alt="Plex Logo">
+  <img id="tab-logo" src="tablogo.png" alt="Tab Logo">
+  <input type="text" id="search-bar" placeholder="Search...">
+  <button id="search-button">Search</button>
+  <button id="background-change-button">Change Background</button>
+  <button id="update-button">Update</button>
+  <script>
+    // JavaScript code for the functionality
+    document.getElementById('search-button').addEventListener('click', function() {
+      var searchValue = document.getElementById('search-bar').value;
+      if (searchValue === 'Converter' || searchValue === 'Https:/Convert.com') {
+        window.location.href = 'Converter.html';
+      } else if (searchValue === 'game' || searchValue === 'Https:/Javagame.com') {
+        window.location.href = 'game.html';
+      }
+    });
+
+    document.getElementById('background-change-button').addEventListener('click', function() {
+      // Code to open file explorer and handle background image selection
+    });
+
+    document.getElementById('update-button').addEventListener('click', function() {
+      // Code to check for updates and display pop-up window
+    });
+  </script>
+</body>
+</html>

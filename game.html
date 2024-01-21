@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Java games from Javascript</title>
+  <style>
+    body {
+      background-image: url('Back.png');
+      background-size: 1600px 900px;
+    }
+    #game {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    #logo {
+      width: 150px;
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div id="game">
+    <!-- Add your game code here -->
+  </div>
+  <button onclick="playGame()">Go to game</button>
+  <script src="Cookie.js"></script>
+  <script>
+    function playGame() {
+      try {
+        // Call the function to play the game from Cookie.js
+        playCookieGame();
+      } catch (error) {
+        console.error('An error occurred while playing the game:', error);
+        // Handle the error here, e.g., show an error message to the user
+      }
+    }
+  </script>
+  <img src="Logoforpygame.png" alt="Logo" id="logo">
+  <button onclick="goBack()">Go Back</button>
+  <script>
+    function goBack() {
+      try {
+        // Add code to go back to Plex.html
+      } catch (error) {
+        console.error('An error occurred while going back:', error);
+        // Handle the error here, e.g., show an error message to the user
+      }
+    }
+  </script>
+</body>
+</html>
